@@ -44,6 +44,19 @@ Generally you can globally define headers and http body in the main device confi
     - `url` \<URL\> **required**: The URL to query when this input is selected.
     - `type` \<number\> **optional** \(Default: **3 (HDMI)**\): The input type as defined [here](https://developers.homebridge.io/#/characteristic/InputSourceType)
 
+- `button` \<Array\<HTTPRequest\>\> **optional**: The remote buttons available. [here](https://developers.homebridge.io/#/characteristic/RemoteKey)
+    - `nextUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `previousUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `upUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `downUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `leftUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `rightUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `selectUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `backUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `exitUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `playUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+    - `infoUrl` \<URL\> **optional**: The URL to query when this button is pressed.
+
 - `method` \<string\> **optional** \(Default: **"GET"**\): The HTTP method to be used for **all** requests.
 - `headers` \<object\> **optional**: Key-Value object for HTTP headers to be included in every request.
 
