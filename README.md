@@ -6,7 +6,7 @@
 </p>
 
 
-# Homebridge Platform Plugin Template
+# Homebridge Http Remote Plugin
 ## Features
 
 - Exposes a HomeKit TV accessory
@@ -63,21 +63,34 @@ Generally you can globally define headers and http body in the main device confi
 {
     "platforms": [
         {
-            "platform": "http-tv",
+            "platform": "http-remote",
             "devices": [
               {
-                "name": "My TV",
+                "name": "Projector",
                 "serialNumber": "my-http-tv-1",
-                "method": "POST",
+                "method": "GET",
                 "headers": {
                     "Authorization": "Bearer token-example"
                 },
                 "power": {
-                    "onUrl": "http://bridge.local/tv/on",
-                    "offUrl": "http://bridge.local/tv/off",
+                    "onUrl": "http://192.168.0.106/projector/on",
+                    "offUrl": "http://192.168.0.106/projector/off",
                     "headers": {
                         "X-Custom-Header": "Value"
                     }
+                },
+                "button": {
+                    "nextUrl": "http://192.168.0.106/projector/next",
+                    "previousUrl": "http://192.168.0.106/projector/prev",
+                    "upUrl": "http://192.168.0.106/projector/u",
+                    "downUrl": "http://192.168.0.106/projector/d",
+                    "leftUrl": "http://192.168.0.106/projector/l",
+                    "rightUrl": "http://192.168.0.106/projector/r",
+                    "selectUrl": "http://192.168.0.106/projector/ok",
+                    "backUrl": "http://192.168.0.106/projector/back",
+                    "exitUrl": "http://192.168.0.106/projector/back",
+                    "playUrl": "http://192.168.0.106/projector/play",
+                    "infoUrl": "http://192.168.0.106/projector/hdmi"
                 },
                 "sources": [
                     {
