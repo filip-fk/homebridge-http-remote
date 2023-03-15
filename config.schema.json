@@ -202,7 +202,7 @@
             "title": "Manufacturer",
             "type": "string",
             "required": false,
-            "default": "Lukas Mateffy"
+            "default": "Karl Kristenprun"
           }
         }
       }
