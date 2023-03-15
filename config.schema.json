@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "HttpRemotePlugin",
+  "pluginAlias": "homebridge-http-remote",
   "pluginType": "platform",
   "singular": true,
   "schema": {
