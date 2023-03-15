@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import { Service, PlatformAccessory, CharacteristicValue, CharacteristicSetCallback, CharacteristicGetCallback } from 'homebridge';
 import { HttpRemotePlatform } from './platform';
 
