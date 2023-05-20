@@ -7,10 +7,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ropka2514/homebridge-http-remote.git"
+    "url": "https://github.com/filip-fk/homebridge-http-remote.git"
   },
   "bugs": {
-    "url": "https://github.com/ropka2514/homebridge-http-remote/issues"
+    "url": "https://github.com/filip-fk/homebridge-http-remote/issues"
   },
   "engines": {
     "node": ">=14.18.1",
