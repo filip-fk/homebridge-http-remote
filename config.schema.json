@@ -13,18 +13,18 @@
             "title": "Name",
             "type": "string",
             "required": true,
-            "default": "My HTTP TV"
+            "default": "Projector"
           },
           "serialNumber": {
             "title": "Serial number",
             "type": "string",
             "required": true,
-            "default": "my-http-tv-1"
+            "default": "projector-ms1200"
           },
           "method": {
             "title": "HTTP Method",
             "type": "string",
-            "default": "POST",
+            "default": "GET",
             "oneOf": [
               {
                 "title": "GET",
@@ -88,7 +88,7 @@
             "required": false,
             "properties": {
               "onUrl": {
-                "title": "Off URL",
+                "title": "On URL",
                 "type": "string",
                 "required": true
               },
@@ -196,13 +196,13 @@
             "title": "Model",
             "type": "string",
             "required": false,
-            "default": "HTTP TV"
+            "default": "TOPVISION"
           },
           "manufacturer": {
             "title": "Manufacturer",
             "type": "string",
             "required": false,
-            "default": "Karl Kristenprun"
+            "default": "WG510"
           }
         }
       }
